@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bookshelf App</title>
+  </head>
+  <body>
+    <main>
+      <section class="section section__search">
+        <div class="container">
+          <div class="container__search">
+            <img
+              src="./assets/logo/Bookshelf-logo.png"
+              alt="logo"
+              class="main-logo"
+            />
+            <form class="form" id="form">
+              <input
+                type="text"
+                placeholder="Search here..."
+                class="input"
+                id="input"
+                value=""
+              />
+            </form>
+          </div>
+          <div class="container__result" hidden>
+            <div>
+              <p class="keyword"></p>
+              <br />
+            </div>
+            <div class="flex-wraper">
+              <div class="container__slider">
+                <div class="slider"></div>
+                <div class="btn__nav">
+                  <button class="btn-left">
+                    <i class="ph-caret-left"></i>
+                  </button>
+                  <button class="btn-right">
+                    <i class="ph-caret-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__list" hidden>
+        <div class="container">
+          <div class="list__container reading-books">
+            <h2>Your Reading Books List</h2>
+            <br />
+            <div class="list__slider"></div>
+          </div>
+          <div class="list__container">
+            <h2>Your Finished Books List</h2>
+            <br />
+            <div class="list__slider2"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
